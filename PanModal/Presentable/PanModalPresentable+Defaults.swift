@@ -38,6 +38,10 @@ public extension PanModalPresentable where Self: UIViewController {
     var springDamping: CGFloat {
         return 0.8
     }
+    
+    var dimmedView: UIView {
+        return presentedVC?.backgroundView ?? UIView()
+    }
 
     var transitionDuration: Double {
         return PanModalAnimator.Constants.defaultTransitionDuration

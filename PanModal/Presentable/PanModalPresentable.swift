@@ -71,6 +71,11 @@ public protocol PanModalPresentable: AnyObject {
     var springDamping: CGFloat { get }
 
     /**
+     Background view used as an overlay over the presenting view
+    */
+    var dimmedView: UIView { get }
+
+    /**
      The transitionDuration value is used to set the speed of animation during a transition,
      including initial presentation.
 
